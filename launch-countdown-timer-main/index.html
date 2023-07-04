@@ -9,28 +9,35 @@
   <title>Frontend Mentor | Launch countdown timer</title>
 
   <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <main class="main">
+  <header class="header">
     <h2 class="title">
       We're launching soon
     </h2>
+  </header>
+
+  <main class="main">
+
     <div class="wrapper">
-      <div class="flip">
-        <div class="days-flip"></div>
+      <div class="flip-container">
+        <div class="days-flip flip"></div>
         <p class="text">Days</p>
       </div>
-      <div class="flip">
-        <div class="days-flip"></div>
+      <div class="flip-container">
+        <div class="hours-flip flip"></div>
         <p class="text">Hours</p>
       </div>
-      <div class="flip">
-        <div class="days-flip"></div>
+      <div class="flip-container">
+        <div class="minutes-flip flip"></div>
         <p class="text">Minutes</p>
       </div>
-      <div class="flip">
-        <div class="days-flip"></div>
+      <div class="flip-container">
+        <div class="seconds-flip flip"></div>
         <p class="text">Seconds</p>
       </div>
     </div>

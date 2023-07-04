@@ -12,6 +12,7 @@
 }
 
 body {
+    font-family: 'Red Hat Text', sans-serif;;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,13 +23,56 @@ body {
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,26,41,1) 100%);
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+}
 
 .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-image: var(--main-bg);
     width: 100%;
-    height: 80%;
+    height: 40%;
     text-align: center; 
 }
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-container {
+    margin: 2em;
+}
+
+.flip {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 1em 0px;
+}
+
+.flip-container p {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 300;
+}
+
+.title {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
 
 .footer {
     display: flex;
@@ -37,7 +81,7 @@ body {
     flex-direction: column;
     background-image: var(--footer-bg);
     background-size: 100% 100%;
-    height: 20%;
+    height: 30%;
     width: 100%;
 }
 

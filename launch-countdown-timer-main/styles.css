@@ -1,7 +1,7 @@
 
 :root {
     --main-bg: url(./images/bg-stars.svg);
-    --footer-bg: url(./images/pattern-hills.svg)
+    --footer-bg: url(./images/pattern-hills.svg);
 }
 
 *, ::after, ::before {
@@ -18,29 +18,46 @@ body {
     justify-content: space-evenly;
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(33,26,41,1) 100%);
 }
 
-.title {
-    z-index: 1000;
-
-}
 
 .main {
     background-image: var(--main-bg);
     width: 100%;
-    height: 80vh;
+    height: 80%;
     text-align: center; 
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     background-image: var(--footer-bg);
-    height: 20vh;
+    background-size: 100% 100%;
+    height: 20%;
     width: 100%;
 }
 
-.attribution { 
-    align-items: baseline;
+.links {
+    margin-top: 4em;
+}
+
+.links a:link {
+    text-decoration: none;
+}
+
+ .links a svg:hover path  {
+    fill: hsl(345, 95%, 68%);
+}
+
+.links a {
+    padding: 0px 1em;
+}
+
+.attribution a { 
     font-size: 11px; 
     text-align: center; 
 }

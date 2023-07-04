@@ -1,0 +1,50 @@
+
+:root {
+    --main-bg: url(./images/bg-stars.svg);
+    --footer-bg: url(./images/pattern-hills.svg)
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.title {
+    z-index: 1000;
+
+}
+
+.main {
+    background-image: var(--main-bg);
+    width: 100%;
+    height: 80vh;
+    text-align: center; 
+}
+
+.footer {
+    background-image: var(--footer-bg);
+    height: 20vh;
+    width: 100%;
+}
+
+.attribution { 
+    align-items: baseline;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

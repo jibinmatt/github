@@ -45,13 +45,14 @@ body {
     text-align: center; 
 }
 
-.wrapper, body, .flip-container, .flip {
+.wrapper, body, .flip {
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .flip-container {
+    position: relative;
     margin: 2em;
     flex-direction: column;
     text-align: center;
@@ -69,7 +70,7 @@ body {
     letter-spacing: 0.5em;
     font-weight: 150;
     color: #716E8B;
-    margin: 40px 0;
+    margin: 40px 0px;
     text-transform: uppercase;
   }
   
@@ -80,7 +81,38 @@ body {
     background: #2C2C44;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
+
+  .flip-container {
+    display: grid;
+    grid-template-areas: "a" "b";
+  }
   
+  .flip-container > .flip-behind {
+    grid-area:  a;
+  }
+  
+  .flip-container > .flip-above {
+    grid-area:  a;
+  }
+  .flip-container > .flip-title {
+    grid-area: b;
+  }
+
+  .flip-behind {
+    animation: flip-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes flip-animation {
+    100% {
+        rotate: 10 0 0 180deg;
+        transform-origin: bottom bottom;
+        transition: .1s transform ease;
+        perspective: 1000px;
+    }
+  }
+
   .flip-lower {
     width: 9.1875em;
     height: 4.375em;
@@ -100,6 +132,7 @@ body {
   }
   
   .flip-text {
+    z-index: 100;
     position: absolute;
     color: hsla(342, 67%, 64%, 1);
     text-align: center;

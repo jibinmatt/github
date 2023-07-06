@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Launch countdown timer</title>
-
+  <script src="app.js" defer ></script>
   <link rel="stylesheet" href="./styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 
     <div class="wrapper">
       <div class="flip-container">
-        <div class="days-flip flip">
+        <div class="days-flip flip flip-above">
           <div class="flip-upper"></div>
           <div class="flip-lower"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
@@ -34,12 +34,23 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
             <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
           </svg>
-          <p class="days flip-text">08</p>
+          <p class="days flip-text"></p>
+        </div>
+        <div class="days-flip flip flip-behind">
+          <div class="flip-upper"></div>
+          <div class="flip-lower"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
+            <path d="M0 0C1.85651 0 3.63699 0.737498 4.94975 2.05025C6.2625 3.36301 7 5.14348 7 7C7 8.85651 6.2625 10.637 4.94975 11.9497C3.63699 13.2625 1.85652 14 9.53674e-07 14L0 7L0 0Z" fill="#171624"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
+            <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
+          </svg>
+          <p class="days flip-text"></p>
         </div>
         <p class="flip-title">Days</p>
       </div>
       <div class="flip-container">
-        <div class="days-flip flip">
+        <div class="hours-flip flip flip-above">
           <div class="flip-upper"></div>
           <div class="flip-lower"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
@@ -48,26 +59,23 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
             <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
           </svg>
-          <p class="days flip-text">23</p>
+          <p class="hours flip-text"></p>
+        </div>
+        <div class="hours-flip flip flip-behind">
+          <div class="flip-upper"></div>
+          <div class="flip-lower"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
+            <path d="M0 0C1.85651 0 3.63699 0.737498 4.94975 2.05025C6.2625 3.36301 7 5.14348 7 7C7 8.85651 6.2625 10.637 4.94975 11.9497C3.63699 13.2625 1.85652 14 9.53674e-07 14L0 7L0 0Z" fill="#171624"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
+            <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
+          </svg>
+          <p class="hours flip-text"></p>
         </div>
         <p class="flip-title">Hours</p>
       </div>
       <div class="flip-container">
-        <div class="days-flip flip">
-          <div class="flip-upper"></div>
-          <div class="flip-lower"></div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
-           <path d="M0 0C1.85651 0 3.63699 0.737498 4.94975 2.05025C6.2625 3.36301 7 5.14348 7 7C7 8.85651 6.2625 10.637 4.94975 11.9497C3.63699 13.2625 1.85652 14 9.53674e-07 14L0 7L0 0Z" fill="#171624"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
-            <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
-          </svg>
-          <p class="days flip-text">55</p>
-        </div>
-        <p class="flip-title">Minutes</p>
-      </div>
-      <div class="flip-container">
-        <div class="days-flip flip">
+        <div class="minutes-flip flip flip-above">
           <div class="flip-upper"></div>
           <div class="flip-lower"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
@@ -76,7 +84,43 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
             <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
           </svg>
-          <p class="days flip-text">41</p>
+          <p class="minutes flip-text"></p>
+        </div>
+        <div class="minutes-flip flip flip-behind">
+          <div class="flip-upper"></div>
+          <div class="flip-lower"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
+            <path d="M0 0C1.85651 0 3.63699 0.737498 4.94975 2.05025C6.2625 3.36301 7 5.14348 7 7C7 8.85651 6.2625 10.637 4.94975 11.9497C3.63699 13.2625 1.85652 14 9.53674e-07 14L0 7L0 0Z" fill="#171624"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
+            <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
+          </svg>
+          <p class="minutes flip-text"></p>
+        </div>
+        <p class="flip-title">Minutes</p>
+      </div>
+      <div class="flip-container">
+        <div class="seconds-flip flip flip-above">
+          <div class="flip-upper"></div>
+          <div class="flip-lower"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
+            <path d="M0 0C1.85651 0 3.63699 0.737498 4.94975 2.05025C6.2625 3.36301 7 5.14348 7 7C7 8.85651 6.2625 10.637 4.94975 11.9497C3.63699 13.2625 1.85652 14 9.53674e-07 14L0 7L0 0Z" fill="#171624"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
+            <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
+          </svg>
+          <p class="seconds flip-text"></p>
+        </div>
+        <div class="seconds-flip flip flip-behind">
+          <div class="flip-upper"></div>
+          <div class="flip-lower"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="left-circle">
+            <path d="M0 0C1.85651 0 3.63699 0.737498 4.94975 2.05025C6.2625 3.36301 7 5.14348 7 7C7 8.85651 6.2625 10.637 4.94975 11.9497C3.63699 13.2625 1.85652 14 9.53674e-07 14L0 7L0 0Z" fill="#171624"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none" class="right-circle">
+            <path d="M7 14C5.14349 14 3.36301 13.2625 2.05025 11.9497C0.737498 10.637 0 8.85652 0 7C0 5.14349 0.737497 3.36301 2.05025 2.05025C3.36301 0.737498 5.14348 2.80326e-07 7 0L7 7L7 14Z" fill="#171624"/>
+          </svg>
+          <p class="seconds flip-text"></p>
         </div>
         <p class="flip-title">Seconds</p>
       </div>

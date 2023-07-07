@@ -98,7 +98,9 @@ body {
     grid-area: b;
   }
 
-  .flip-behind {
+
+
+  .animation {
     animation: flip-animation;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -106,10 +108,9 @@ body {
 
   @keyframes flip-animation {
     100% {
-        rotate: 10 0 0 180deg;
-        transform-origin: bottom bottom;
-        transition: .1s transform ease;
-        perspective: 1000px;
+        rotate: 10 10 100 -360deg;
+        transform-origin: center center;
+        transition: .3s transform ease;
     }
   }
 

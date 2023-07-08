@@ -31,7 +31,6 @@ body {
     height: 25%;
     width: 100%;
     background-image: var(--main-bg);
-    z-index: -1;
 }
 
 .main {
@@ -98,9 +97,7 @@ body {
     grid-area: b;
   }
 
-
-
-  .animation {
+  /* .animation {
     animation: flip-animation;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -108,11 +105,12 @@ body {
 
   @keyframes flip-animation {
     100% {
-        rotate: 10 10 100 -360deg;
-        transform-origin: center center;
-        transition: .3s transform ease;
+      transform: rotateX(-180deg);
+      transform-origin: bottom bottom;
+      transition: .3s transform ease;
+      transform-style: preserve-3d;
     }
-  }
+  } */
 
   .flip-lower {
     width: 9.1875em;
@@ -133,7 +131,6 @@ body {
   }
   
   .flip-text {
-    z-index: 100;
     position: absolute;
     color: hsla(342, 67%, 64%, 1);
     text-align: center;

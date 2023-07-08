@@ -2,12 +2,8 @@ const days = document.querySelector(".days")
 const hours = document.querySelector(".hours")
 const minutes = document.querySelector(".minutes")
 const seconds = document.querySelector(".seconds")
-const secondsFlip = document.querySelector(".seconds-flip:not([flip-above])");
-const minutesFlip = document.querySelector(".minutes-flip:not([flip-above])");
-const hoursFlip = document.querySelector(".hours-flip:not([flip-above])");
-const daysFlip = document.querySelector(".days-flip:not([flip-above])");
 
-let countDownDate = new Date("Jul 17, 2023 15:48:52").getTime();
+let countDownDate = new Date("Jul 17, 2023 13:07:52").getTime();
 
 let myfunc = setInterval(function() {
 
@@ -32,14 +28,35 @@ let myfunc = setInterval(function() {
         seconds.innerHTML = "00"
     }
 
+    /*
+
+    // animation //
+    const secondsFlip = document.querySelector(".seconds-flip");
+    const minutesFlip = document.querySelector(".minutes-flip");
+    const hoursFlip = document.querySelector(".hours-flip");
+    const daysFlip = document.querySelector(".days-flip");
+    
     secondsFlip.classList.add("animation");
-    console.log(secondsC)
 
     if (secondsC == 0) {
         minutesFlip.classList.add("animation");
     } else {
         minutesFlip.classList.remove("animation");
     }
+
+    if (secondsC==0 && minutesC==0) {
+        hoursFlip.classList.add("animation");
+    } else {
+        hoursFlip.classList.remove("animation");
+    }
+
+    if (secondsC==0 && minutesC==0 && hoursC==0) {
+        daysFlip.classList.add("animation");
+    } else {
+        daysFlip.classList.remove("animation");
+    }
+    
+    */
 
 }, 1000);
 

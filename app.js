@@ -3,7 +3,7 @@ const hours = document.querySelector(".hours")
 const minutes = document.querySelector(".minutes")
 const seconds = document.querySelector(".seconds")
 
-let countDownDate = new Date("Jul 27, 2023 13:07:52").getTime();
+let countDownDate = new Date("Dec 31, 2023 23:59:59").getTime();
 
 let myfunc = setInterval(function() {
 
